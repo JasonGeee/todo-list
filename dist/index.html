@@ -6,23 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Left Sidebar -->
-    <div class="sidebar">
-        <div class="top-section">
-            <h1>Todo List</h1>
-            <button>+ Create a task</button>
+    <!-- Header Section -->
+    <header>
+        <div class="header-icon">
+            <i class="uil uil-clipboard-notes"></i>
         </div>
-        <div class="mid-section">
+        <h1 class="title">Todo List</h1>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <!-- Nav Section -->
+        <nav>
+            <div class="new-task">
+                <button class="create-task">+ Create New Task</button>
+            </div>
+            <div class="top-nav-section">
+                <button id="inbox" class="navBtn"><i class="uil uil-inbox"></i>    Inbox</button>
+                <button id="today" class="navBtn"><i class="uil uil-calender"></i>    Today</button>
+                <button id="this-week" class="navBtn"><i class="uil uil-calendar-alt"></i>    This Week</button>
+            </div>
+            <div class="project-section">
+                <h1>Projects</h1>
+                <button class="add-project"><i class="uil uil-plus"></i>    Add Project</button>
+            </div>
+        </nav>
 
+        <!-- Tasks Section -->
+        <div class="tasks-section">
+    
         </div>
-        <div class="project-section">
-            
-        </div>
-    </div>
+    </main>
 
-    <!-- Main Body -->
+    <!-- Footer Sections -->
+    <footer>
+        <div class="signature">
+            <p>Copyright © 2022 jasongeee <i class="uil uil-github"></i></p>
+        </div>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>

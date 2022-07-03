@@ -1,0 +1,173 @@
+:root {
+    --header-bg-color: #282828;
+    --sidebar-bg-color: #242424;
+    --task-bg-color: #1f1f1f;
+    --button-hover-color: #363636;
+    --nav-margin-bottom: 15px;
+    --navbar-left-margin: 1.2rem;
+    --nav-font-size: 1.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Button style resets */
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    background-color: var(--header-bg-color);
+    padding: .5rem 2.5rem;
+    gap: 15px;
+    font-size: 1.2rem;
+    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.8);
+}
+
+.header-icon {
+    font-size: 2rem;
+}
+
+/* Nav Section */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    background-color: var(--sidebar-bg-color);
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 13vw;
+}
+
+    /* Button section */
+.new-task {
+    margin-bottom: var(--nav-margin-bottom);
+}
+
+.new-task .create-task {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    font-size: 15px;
+    transition: all .5s ease;
+   }
+   
+.new-task .create-task:hover {
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+   
+.new-task .create-task:active {
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(3px);
+    transition: 100ms;
+}
+
+    /* Top Nav Section */
+
+.top-nav-section {
+    display: block;
+    gap: 10px;
+    color: #fff;
+    margin-bottom: var(--nav-margin-bottom);
+    font-size: var(--nav-font-size);
+    margin-left: var(--navbar-left-margin);
+}
+
+.navBtn {
+    padding: 0.5rem 1.125rem;
+    width: 80%;
+    text-align: left;
+}
+
+.navBtn:hover {
+    border-radius: 5px;
+    background-color: var(--button-hover-color);
+}
+
+    /* Project Nav Section */
+
+.project-section {
+    display: block;
+    color: #fff;
+    font-size: var(--nav-font-size);
+}
+
+.add-project {
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    margin-left: -20px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.add-project:hover {
+    border-radius: 5px;
+    background-color: var(--button-hover-color);
+}
+
+.project-section h1,
+.project-section .add-project {
+    margin-bottom: var(--nav-margin-bottom);
+    text-align: left;
+}
+
+/* Task Section */
+.tasks-section {
+    /* width: 100%;
+    height: 100%; */
+    background-color: var(--task-bg-color);
+}
+
+
+/* Footer Section */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--header-bg-color);
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0px -1px 12px 3px rgba(0,0,0,0.8);
+}
+
+.signature {
+    text-align: center;
+    padding: 1rem;
+}
+
+.signature > p > i {
+    font-size: 1.5rem;
+}
