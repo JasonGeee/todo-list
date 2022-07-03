@@ -24,7 +24,7 @@
         <!-- Nav Section -->
         <nav>
             <div class="new-task">
-                <button class="create-task">+ Create New Task</button>
+                <button id="createTaskBtn" class="create-task">+ Create New Task</button>
             </div>
             <div class="top-nav-section">
                 <button id="inbox" class="navBtn"><i class="uil uil-inbox"></i>    Inbox</button>
@@ -33,13 +33,49 @@
             </div>
             <div class="project-section">
                 <h1>Projects</h1>
-                <button class="add-project"><i class="uil uil-plus"></i>    Add Project</button>
+                <button id="projectBtn" class="add-project"><i class="uil uil-plus"></i>    Add Project</button>
             </div>
         </nav>
 
         <!-- Tasks Section -->
         <div class="tasks-section">
-    
+            <!-- Create Task Popup -->
+            <div class="task-popup" style="display: none">
+                <form action="">
+                    <input type="text" id="taskName" placeholder="e.g, Finish Full Stack">
+                    <textarea 
+                        name="taskDescription" 
+                        id="taskDescription" 
+                        cols="30" 
+                        rows="5"
+                        placeholder="Description"
+                    ></textarea>
+                    <div class="dateAndPriority">
+                        <label for="date">Due Date</label>
+                        <input type="date" name="date" id="date">
+                        <label for="priority">Priority</label>
+                        <select name="priority" id="priority">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" id="add">Add Task</button>
+                        <button type="reset" id="cancel">Cancel</button>
+                    </div>
+                </form>
+                
+            </div>
+            <!-- Project Popup -->
+            <div class="project-popup" style="display: none">
+                <h1>Add Project</h1>
+                <div class="project-form">
+                    <input type="text" name="project" id="project" placeholder="e.g Hello World Project">
+                    <button type="submit" id="add">Add</button>
+                    <button type="reset" id="cancel">Cancel</button>
+                </div>
+            </div>
         </div>
     </main>
 
