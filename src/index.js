@@ -1,5 +1,4 @@
-import createProject from "./assests/add-project";
-import taskPopup from "./assests/add-task";
+import { taskPopup, createProject } from "./assests/loadDOM";
 
-createProject();
 taskPopup();
+createProject();

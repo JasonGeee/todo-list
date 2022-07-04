@@ -173,6 +173,7 @@ nav {
 }
 
 #taskName, #taskDescription {
+    width: 80%;
     font-size: 1rem;
     border: none;
     color: #fff;
@@ -209,7 +210,8 @@ nav {
     padding: 5px 10px;
 }
 
-#add {
+#addProject,
+#addTask {
     color: #1f1f1f;
     background-color:lightgreen;
     font-weight: bold;
@@ -217,7 +219,8 @@ nav {
     border-radius: 8px;
 }
 
-#cancel {
+#cancelProject,
+#cancelTask {
     color: #1f1f1f;
     background-color: lightcoral;
     font-weight: bold;
